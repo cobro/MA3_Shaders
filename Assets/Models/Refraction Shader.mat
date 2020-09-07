@@ -32,7 +32,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Blending: 0
+    - _Blending: 0.492
     - _Distort: 0.045
     - _Float0: 0.024
     - _RippleScale: 1.11

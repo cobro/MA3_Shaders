@@ -85,7 +85,7 @@ Shader "Refraction Shader"
 }
 /*ASEBEGIN
 Version=18400
-888;75;1668;1326;867.4943;1230.27;2.086578;False;True
+516;75;2043;765;1258.728;644.9849;2.086578;True;True
 Node;AmplifyShaderEditor.TimeNode;18;-783.5844,176.4344;Inherit;False;0;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.RangedFloatNode;24;-599.4028,87.3608;Inherit;False;Property;_Float0;Float 0;3;0;Create;True;0;0;False;0;False;0;0.07450486;0;1;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;22;-530.5844,200.4344;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
@@ -99,11 +99,12 @@ Node;AmplifyShaderEditor.SamplerNode;11;-159.4506,71.46167;Inherit;True;Property
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;15;175.4156,171.4344;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;FLOAT;0;False;1;COLOR;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;12;351.4156,236.4344;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;FLOAT4;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.CommentaryNode;36;394.5125,-659.9012;Inherit;False;521.3383;372.4299;Fix normals for back side faces;2;38;37;;1,1,1,1;0;0
-Node;AmplifyShaderEditor.Vector3Node;37;422.0995,-605.3323;Float;False;Constant;_Frontnormalvector;Front normal vector;4;0;Create;True;0;0;False;0;False;0,0,1;0,0,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
-Node;AmplifyShaderEditor.ScreenColorNode;6;107.8513,-149.7727;Inherit;False;Global;_GrabScreen0;Grab Screen 0;0;0;Create;True;0;0;False;0;False;Object;-1;False;False;1;0;FLOAT2;0,0;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.RangedFloatNode;9;348.8513,-30.77271;Inherit;False;Property;_Blending;Blending;0;0;Create;True;0;0;False;0;False;0;0;0;1;0;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;8;645.8513,-17.77271;Inherit;False;Constant;_White;White;0;0;Create;True;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.Vector3Node;38;422.0995,-446.3323;Float;False;Constant;_Backnormalvector;Back normal vector;4;0;Create;True;0;0;False;0;False;0,0,-1;0,0,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
+Node;AmplifyShaderEditor.RangedFloatNode;8;645.8513,-17.77271;Inherit;False;Constant;_White;White;0;0;Create;True;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.ScreenColorNode;6;107.8513,-149.7727;Inherit;False;Global;_GrabScreen0;Grab Screen 0;0;0;Create;True;0;0;False;0;False;Object;-1;False;False;1;0;FLOAT2;0,0;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.Vector3Node;37;422.0995,-605.3323;Float;False;Constant;_Frontnormalvector;Front normal vector;4;0;Create;True;0;0;False;0;False;0,0,1;0,0,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
+Node;AmplifyShaderEditor.RangedFloatNode;9;348.8513,-30.77271;Inherit;False;Property;_Blending;Blending;0;0;Create;True;0;0;False;0;False;0;0;0;1;0;1;FLOAT;0
+Node;AmplifyShaderEditor.SimpleTimeNode;16;-657.5844,-155.5656;Inherit;True;1;0;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;34;943.4156,-45.56555;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.LerpOp;7;786.8513,-149.7727;Inherit;False;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;FLOAT;0;False;1;COLOR;0
 Node;AmplifyShaderEditor.SwitchByFaceNode;40;937.1584,-584.3903;Inherit;False;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0
@@ -114,7 +115,6 @@ Node;AmplifyShaderEditor.FresnelNode;25;674.4156,68.43445;Inherit;False;Standard
 Node;AmplifyShaderEditor.RangedFloatNode;29;480.4156,320.4344;Inherit;False;Constant;_Float1;Float 1;5;0;Create;True;0;0;False;0;False;1.14;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;35;863.4156,344.4344;Inherit;False;Constant;_Float2;Float 2;5;0;Create;True;0;0;False;0;False;-1;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.InverseOpNode;32;953.4156,75.43445;Inherit;False;1;0;FLOAT4x4;0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1;False;1;FLOAT4x4;0
-Node;AmplifyShaderEditor.SimpleTimeNode;16;-657.5844,-155.5656;Inherit;True;1;0;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;1367.252,-208;Float;False;True;-1;2;ASEMaterialInspector;0;0;Standard;Refraction Shader;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;Back;0;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Translucent;0.5;True;True;0;False;Opaque;;Transparent;All;14;all;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;False;2;15;10;25;False;0.5;True;0;0;False;-1;0;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;-1;-1;-1;-1;0;False;0;0;False;-1;-1;0;False;-1;0;0;0;False;0.1;False;-1;0;False;-1;True;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
 WireConnection;22;0;18;2
 WireConnection;22;1;24;0
@@ -140,4 +140,4 @@ WireConnection;0;1;40;0
 WireConnection;0;2;7;0
 WireConnection;0;4;7;0
 ASEEND*/
-//CHKSM=5EF0343EF9F65549AE9C641CD0012ACDE193033C
+//CHKSM=40836940A912E44417632B9D27D0D8EF8C3A02A8
