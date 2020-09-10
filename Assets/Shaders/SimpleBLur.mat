@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SimpleBLur
+  m_Shader: {fileID: 4800000, guid: e07d4765a2a9d4e9883a78f337c36ea0, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - _AbsorDistance: 1.86
+    - _AbsorbPower: 0.89519763
+    - _Float0: 0.2
+    - __dirty: 1
+    m_Colors:
+    - _00: {r: 0, g: 1, b: 0.82090235, a: 0}
+    - _AbsorbtionCOlor: {r: 0.24313721, g: 0.90588236, b: 0.71582276, a: 0}
+    - _AbsorbtionCOlor1: {r: 0.6039216, g: 0.4, b: 0.47176987, a: 0}
+    - _Color0: {r: 1, g: 0, b: 0, a: 0}
